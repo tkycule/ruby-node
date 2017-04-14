@@ -73,7 +73,7 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 
 # install phantomjs
 RUN cd ~ \
-  && export PHANTOM_JS="phantomjs-1.9.8-linux-x86_64" \
+  && export PHANTOM_JS="phantomjs-2.1.1-linux-x86_64" \
   && wget https://cnpmjs.org/mirrors/phantomjs/$PHANTOM_JS.tar.bz2 \
   && tar xvjf $PHANTOM_JS.tar.bz2 \
   && mv $PHANTOM_JS /usr/local/share \
