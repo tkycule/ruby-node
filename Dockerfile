@@ -80,7 +80,7 @@ RUN cd ~ \
   && ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
 
 # install rsync
-RUN apt-get install -y --no-install-recommends rsync
+RUN apt-get update && apt-get install -y --no-install-recommends rsync
 
 CMD [ "irb" ]
 
