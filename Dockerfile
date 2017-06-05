@@ -79,6 +79,9 @@ RUN cd ~ \
   && mv $PHANTOM_JS /usr/local/share \
   && ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
 
+# install rsync
+RUN apt-get install -y --no-install-recommends rsync
+
 CMD [ "irb" ]
 
 # vim:set ft=Dockerfile:
